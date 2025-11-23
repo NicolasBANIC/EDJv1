@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piscines de Luxe | Éclat de Jardin</title>
+    <meta name="description" content="Construction de piscines haut de gamme : coque, béton, container. Filtration, sécurité et intégration paysagère.">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/pool-service.jpg') no-repeat center center/cover;
+            color: var(--white);
+            padding: 10rem 0 6rem;
+            text-align: center;
+        }
+
+        .detail-section {
+            padding: 4rem 0;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .detail-card {
+            background: var(--white);
+            padding: 2rem;
+            border: 1px solid var(--grey-perl);
+            border-top: 3px solid var(--blue-cobalt);
+        }
+
+        .detail-card h3 {
+            color: var(--blue-cobalt);
+            font-size: 1.5rem;
+        }
+
+        .faq-section {
+            background-color: var(--offwhite);
+        }
+
+        .accordion-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border: 1px solid var(--grey-perl);
+        }
+
+        .accordion-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--blue-deep);
+        }
+
+        .accordion-content {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .accordion-content p {
+            padding-bottom: 1.5rem;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-item.active .accordion-header::after {
+            content: '-';
+        }
+        
+        .accordion-header::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo-text">
+                ÉCLAT DE JARDIN
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="index.html" class="active">Services</a></li>
+                    <li><a href="../realisations.html">Réalisations</a></li>
+                    <li><a href="../a-propos.html">À Propos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../contact.html" class="btn btn-primary">Demander une étude</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container fade-in">
+                <h1>Piscines d'Exception</h1>
+                <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">L'art de l'eau maîtrisé. Des bassins conçus pour durer et pour sublimer votre extérieur.</p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2>Nos Types de Bassins</h2>
+                    <p>Une solution adaptée à chaque terrain et à chaque envie.</p>
+                </div>
+                
+                <div class="detail-grid">
+                    <article class="detail-card fade-in">
+                        <h3>Piscines Coque Premium</h3>
+                        <p><strong>Rapidité et finition lisse.</strong> Nos coques en polyester haute densité offrent une étanchéité parfaite et une installation rapide. Idéal pour les projets aux délais serrés.</p>
+                        <ul style="margin-top: 1rem; font-size: 0.9rem;">
+                            <li>✓ Installation en quelques jours</li>
+                            <li>✓ Toucher doux et entretien facile</li>
+                            <li>✓ Garantie décennale structure</li>
+                        </ul>
+                    </article>
+
+                    <article class="detail-card fade-in">
+                        <h3>Piscines Maçonnées</h3>
+                        <p><strong>La liberté totale de forme.</strong> Le béton armé permet toutes les audaces architecturales : débordement, miroir, formes libres. Le choix de l'excellence pour les propriétés de prestige.</p>
+                        <ul style="margin-top: 1rem; font-size: 0.9rem;">
+                            <li>✓ Sur-mesure absolu</li>
+                            <li>✓ Revêtements variés (carrelage, pierre, liner armé)</li>
+                            <li>✓ Durabilité exceptionnelle</li>
+                        </ul>
+                    </article>
+
+                    <article class="detail-card fade-in">
+                        <h3>Piscines Container</h3>
+                        <p><strong>Design industriel et mobilité.</strong> Une piscine intégrée dans un container maritime recyclé ou neuf. Une esthétique moderne, une installation "plug & play" et la possibilité de la déplacer.</p>
+                        <ul style="margin-top: 1rem; font-size: 0.9rem;">
+                            <li>✓ Look contemporain unique</li>
+                            <li>✓ Vitrage possible sur les parois</li>
+                            <li>✓ Installation hors-sol ou semi-enterrée</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section" style="background-color: var(--offwhite);">
+            <div class="container">
+                <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="fade-in">
+                        <h2>Équipements & Finitions</h2>
+                        <p>Une piscine Éclat de Jardin, c'est aussi une technologie de pointe pour un confort absolu.</p>
+                        
+                        <div style="margin-top: 2rem;">
+                            <h4 style="color: var(--blue-cobalt);">Filtration & Traitement</h4>
+                            <p>Systèmes automatisés au sel ou au magnésium pour une eau douce et cristalline sans les désagréments du chlore classique. Pompes à chaleur silencieuses pour une baignade prolongée.</p>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <h4 style="color: var(--blue-cobalt);">Sécurité & Normes</h4>
+                            <p>Volets immergés discrets, fonds mobiles ou barrières design. Nous intégrons la sécurité dès la conception pour respecter la norme NF P90-308 sans sacrifier l'esthétique.</p>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <h4 style="color: var(--blue-cobalt);">Abords & Margelles</h4>
+                            <p>Pierre naturelle, grès cérame ou bois exotique. La plage de piscine est traitée comme un salon extérieur.</p>
+                        </div>
+                    </div>
+                    <div class="fade-in">
+                        <img src="../assets/images/pool-detail.jpg" alt="Détail piscine" style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Questions Fréquentes</h2>
+                <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                    
+                    <div class="accordion-item fade-in">
+                        <div class="accordion-header">Quelle est la durée de construction d'une piscine ?</div>
+                        <div class="accordion-content">
+                            <p>Pour une piscine coque, comptez 1 à 2 semaines d'installation. Pour une piscine maçonnée, le délai est généralement de 6 à 10 semaines selon la complexité et les temps de séchage du béton.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-in">
+                        <div class="accordion-header">Faut-il un permis de construire ?</div>
+                        <div class="accordion-content">
+                            <p>Pour les bassins de moins de 10m², aucune déclaration n'est nécessaire (sauf zone protégée). Entre 10 et 100m², une déclaration préalable de travaux suffit. Au-delà de 100m² ou avec abri haut, un permis de construire est requis. Nous nous occupons des démarches administratives.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-in">
+                        <div class="accordion-header">Quel système de traitement de l'eau choisir ?</div>
+                        <div class="accordion-content">
+                            <p>Nous recommandons l'électrolyse au sel pour son confort (eau douce, pas d'odeur de chlore) et sa simplicité d'entretien. Le traitement au magnésium est également une option très haut de gamme pour une eau aux vertus relaxantes.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-in">
+                        <div class="accordion-header">Proposez-vous des garanties ?</div>
+                        <div class="accordion-content">
+                            <p>Absolument. Toutes nos constructions sont couvertes par une garantie décennale obligatoire. Les équipements (pompes, robots) bénéficient de leurs garanties constructeurs respectives (généralement 2 à 5 ans).</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2>Votre projet piscine commence ici</h2>
+                <a href="../contact.html" class="btn btn-primary">Demander une étude personnalisée</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="logo-text" style="display: block; margin-bottom: 1.5rem;">ÉCLAT DE JARDIN</a>
+                    <p style="color: rgba(255,255,255,0.7);">L'excellence de l'aménagement extérieur.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="piscines.html">Piscines</a></li>
+                        <li><a href="amenagement-exterieur.html">Aménagement Extérieur</a></li>
+                        <li><a href="containers.html">Containers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Avenue du Prestige</li>
+                        <li>75008 Paris, France</li>
+                        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                        <li><a href="mailto:contact@eclatdejardin.fr">contact@eclatdejardin.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Éclat de Jardin. Tous droits réservés. <a href="../mentions-legales.html">Mentions Légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Simple Accordion Script
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

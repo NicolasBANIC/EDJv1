@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers Architecturaux | Éclat de Jardin</title>
+    <meta name="description" content="Solutions modulaires haut de gamme : pool house, studio de jardin, bureau et stockage en container maritime transformé.">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/container-service.jpg') no-repeat center center/cover;
+            color: var(--white);
+            padding: 10rem 0 6rem;
+            text-align: center;
+        }
+
+        .uses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .use-card {
+            background: var(--white);
+            border: 1px solid var(--grey-perl);
+            transition: var(--transition-fast);
+        }
+
+        .use-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .use-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .use-content {
+            padding: 2rem;
+        }
+
+        .tech-section {
+            background-color: var(--blue-deep);
+            color: var(--white);
+            padding: 6rem 0;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-section {
+            background-color: var(--offwhite);
+            padding: 6rem 0;
+        }
+
+        .accordion-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border: 1px solid var(--grey-perl);
+        }
+
+        .accordion-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--blue-deep);
+        }
+
+        .accordion-content {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .accordion-content p {
+            padding-bottom: 1.5rem;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-header::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        .accordion-item.active .accordion-header::after {
+            content: '-';
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo-text">
+                ÉCLAT DE JARDIN
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="index.html" class="active">Services</a></li>
+                    <li><a href="../realisations.html">Réalisations</a></li>
+                    <li><a href="../a-propos.html">À Propos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../contact.html" class="btn btn-primary">Demander une étude</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container fade-in">
+                <h1>Containers Architecturaux</h1>
+                <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">L'upcycling de luxe. Une structure robuste, un design industriel et une infinité de possibilités.</p>
+            </div>
+        </section>
+
+        <section class="content-section" style="padding: 6rem 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                    <h2>Des Espaces Modulables</h2>
+                    <p>Transformez un container maritime en une pièce à vivre d'exception.</p>
+                </div>
+
+                <div class="uses-grid">
+                    <article class="use-card fade-in">
+                        <img src="../assets/images/pool-house.jpg" alt="Pool House" class="use-img">
+                        <div class="use-content">
+                            <h3>Pool House</h3>
+                            <p>L'allié parfait de votre piscine. Espace vestiaire, cuisine d'été ouverte, local technique intégré. Le tout avec un style résolument moderne.</p>
+                        </div>
+                    </article>
+
+                    <article class="use-card fade-in">
+                        <img src="../assets/images/studio-garden.jpg" alt="Studio de Jardin" class="use-img">
+                        <div class="use-content">
+                            <h3>Studio & Bureau</h3>
+                            <p>Télétravaillez au calme ou accueillez vos amis en toute indépendance. Isolation thermique performante pour une utilisation toute l'année.</p>
+                        </div>
+                    </article>
+
+                    <article class="use-card fade-in">
+                        <img src="../assets/images/storage.jpg" alt="Stockage Design" class="use-img">
+                        <div class="use-content">
+                            <h3>Stockage & Technique</h3>
+                            <p>Fini l'abri de jardin en tôle. Optez pour un local vélo sécurisé, un atelier bricolage ou un local poubelle design et intégré.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 4rem; color: var(--white);">Excellence Technique</h2>
+                <div class="tech-grid">
+                    <div class="tech-item fade-in">
+                        <div class="tech-icon">⚙</div>
+                        <h3>Structure Acier</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Acier Corten ultra-résistant, traité anticorrosion. Une longévité à toute épreuve face aux intempéries.</p>
+                    </div>
+                    <div class="tech-item fade-in">
+                        <div class="tech-icon">🌡</div>
+                        <h3>Isolation Premium</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Isolation par l'intérieur (laine de roche, mousse PU) conforme aux normes RT2012/RE2020 pour un confort été comme hiver.</p>
+                    </div>
+                    <div class="tech-item fade-in">
+                        <div class="tech-icon">🎨</div>
+                        <h3>Finitions Sur-Mesure</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Bardage bois, crépi, ou aspect industriel brut. Larges baies vitrées aluminium pour la lumière.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Questions Fréquentes</h2>
+                <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                    
+                    <div class="accordion-item fade-in">
+                        <div class="accordion-header">Faut-il un permis de construire pour un container ?</div>
+                        <div class="accordion-content">
+                            <p>Comme pour toute construction : moins de 5m² (rien), de 5 à 20m² (déclaration préalable), plus de 20m² (permis de construire). Attention aux PLU spécifiques. Nous vous accompagnons dans ces démarches.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-in">
+                        <div class="accordion-header">Comment le container est-il livré ?</div>
+                        <div class="accordion-content">
+                            <p>Le container est préparé en atelier puis livré par camion-grue. Il est posé sur des fondations légères (plots béton ou vis de fondation) préparées en amont. L'installation est très rapide (souvent 1 journée).</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-in">
+                        <div class="accordion-header">Est-ce bien isolé ?</div>
+                        <div class="accordion-content">
+                            <p>Oui, c'est notre priorité. Nous transformons une "boîte en métal" en un véritable espace de vie. L'isolation est étudiée pour éviter l'effet "four" en été et le froid en hiver.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2>Un projet modulaire en tête ?</h2>
+                <a href="../contact.html" class="btn btn-primary">Demander un devis</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="logo-text" style="display: block; margin-bottom: 1.5rem;">ÉCLAT DE JARDIN</a>
+                    <p style="color: rgba(255,255,255,0.7);">L'excellence de l'aménagement extérieur.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="piscines.html">Piscines</a></li>
+                        <li><a href="amenagement-exterieur.html">Aménagement Extérieur</a></li>
+                        <li><a href="containers.html">Containers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Avenue du Prestige</li>
+                        <li>75008 Paris, France</li>
+                        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                        <li><a href="mailto:contact@eclatdejardin.fr">contact@eclatdejardin.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Éclat de Jardin. Tous droits réservés. <a href="../mentions-legales.html">Mentions Légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Simple Accordion Script
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

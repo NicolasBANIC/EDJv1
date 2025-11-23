@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services | Éclat de Jardin</title>
+    <meta name="description" content="Découvrez nos pôles d'expertise : piscines, aménagement paysager et containers architecturaux.">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background-color: var(--blue-deep);
+            color: var(--white);
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+        
+        .service-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 6rem;
+        }
+
+        .service-block:nth-child(even) {
+            direction: rtl;
+        }
+
+        .service-block:nth-child(even) .service-content {
+            direction: ltr;
+        }
+
+        .service-img {
+            height: 400px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .service-block, .service-block:nth-child(even) {
+                grid-template-columns: 1fr;
+                direction: ltr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo-text">
+                ÉCLAT DE JARDIN
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="index.html" class="active">Services</a></li>
+                    <li><a href="../realisations.html">Réalisations</a></li>
+                    <li><a href="../a-propos.html">À Propos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../contact.html" class="btn btn-primary">Demander une étude</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container fade-in">
+                <h1>Nos Services</h1>
+                <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">Éclat de Jardin structure ses prestations en trois pôles d'excellence pour répondre à toutes vos exigences d'aménagement extérieur.</p>
+            </div>
+        </section>
+
+        <section class="services-list">
+            <div class="container">
+                
+                <div class="service-block fade-in">
+                    <div class="service-img-wrapper">
+                        <img src="../assets/images/pool-service.jpg" alt="Piscines de luxe" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h2>Piscines d'Exception</h2>
+                        <p>Que vous rêviez d'un couloir de nage épuré, d'une piscine à débordement ou d'un bassin familial convivial, nous concevons des piscines qui subliment votre propriété. Coque, béton ou container, nous maîtrisons toutes les techniques.</p>
+                        <a href="piscines.html" class="btn btn-secondary">Découvrir nos piscines</a>
+                    </div>
+                </div>
+
+                <div class="service-block fade-in">
+                    <div class="service-img-wrapper">
+                        <img src="../assets/images/garden-service.svg" alt="Aménagement paysager" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h2>Aménagement Extérieur</h2>
+                        <p>Votre jardin est le prolongement de votre maison. Terrasses en bois exotique, allées structurées, murs de soutènement et végétalisation : nous créons des ambiances uniques et durables.</p>
+                        <a href="amenagement-exterieur.html" class="btn btn-secondary">Voir les aménagements</a>
+                    </div>
+                </div>
+
+                <div class="service-block fade-in">
+                    <div class="service-img-wrapper">
+                        <img src="../assets/images/container-service.jpg" alt="Containers aménagés" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h2>Containers & Modulaire</h2>
+                        <p>L'architecture container offre une flexibilité et un design industriel chic incomparable. Pool house, studio de jardin, bureau ou espace de stockage : optez pour une solution rapide et écologique.</p>
+                        <a href="containers.html" class="btn btn-secondary">Explorer les containers</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2>Un projet global ?</h2>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Nous pouvons gérer l'ensemble de votre projet, de la piscine au jardin en passant par le pool house.</p>
+                <a href="../contact.html" class="btn btn-primary">Demander un devis global</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="logo-text" style="display: block; margin-bottom: 1.5rem;">ÉCLAT DE JARDIN</a>
+                    <p style="color: rgba(255,255,255,0.7);">L'excellence de l'aménagement extérieur.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="piscines.html">Piscines</a></li>
+                        <li><a href="amenagement-exterieur.html">Aménagement Extérieur</a></li>
+                        <li><a href="containers.html">Containers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Avenue du Prestige</li>
+                        <li>75008 Paris, France</li>
+                        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                        <li><a href="mailto:contact@eclatdejardin.fr">contact@eclatdejardin.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Éclat de Jardin. Tous droits réservés. <a href="../mentions-legales.html">Mentions Légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

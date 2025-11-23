@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+      .text { font-family: 'Playfair Display', serif; font-size: 32px; fill: #0D2A4A; }
+      .accent { fill: #D4AF37; }
+    </style>
+  </defs>
+  <path class="accent" d="M30,40 L40,20 L50,40 L40,60 Z" opacity="0.8"/>
+  <path class="accent" d="M40,20 L50,5 L60,20 Z" opacity="0.6"/>
+  <text x="70" y="50" class="text">Éclat de Jardin</text>
+</svg>

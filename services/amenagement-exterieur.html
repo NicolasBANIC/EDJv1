@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aménagement Extérieur | Éclat de Jardin</title>
+    <meta name="description" content="Paysagiste haut de gamme : terrasses, soutènements, enrochements, gazon et création de jardins sur-mesure.">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/garden-service.svg') no-repeat center center/cover;
+            color: var(--white);
+            padding: 10rem 0 6rem;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 0;
+        }
+
+        .feature-item {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            group: group;
+        }
+
+        .feature-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .feature-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(13,42,74,0.9), transparent);
+            padding: 2rem;
+            color: var(--white);
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover .feature-img {
+            transform: scale(1.05);
+        }
+
+        .feature-item:hover .feature-overlay {
+            transform: translateY(0);
+        }
+
+        .content-section {
+            padding: 6rem 0;
+        }
+
+        .eco-badge {
+            display: inline-block;
+            background-color: var(--taupe);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo-text">
+                ÉCLAT DE JARDIN
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="index.html" class="active">Services</a></li>
+                    <li><a href="../realisations.html">Réalisations</a></li>
+                    <li><a href="../a-propos.html">À Propos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../contact.html" class="btn btn-primary">Demander une étude</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container fade-in">
+                <h1>Aménagement Extérieur</h1>
+                <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">Sculpter le paysage pour créer des lieux de vie. Terrasses, jardins et structures pour une harmonie parfaite.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                    <h2>Nos Expertises Paysagères</h2>
+                    <p>Des solutions techniques et esthétiques pour valoriser votre terrain.</p>
+                </div>
+
+                <div class="uses-grid">
+                    <article class="use-card fade-in">
+                        <img src="../assets/images/terrace.jpg" alt="Terrasses" class="use-img">
+                        <div class="use-content">
+                            <h3>Terrasses d'Exception</h3>
+                            <p>Bois exotique (Ipé, Cumaru), grès cérame ou pierre naturelle. Des espaces de vie prolongés vers l'extérieur avec des finitions invisibles.</p>
+                        </div>
+                    </article>
+                    <article class="use-card fade-in">
+                        <img src="../assets/images/retaining-wall.jpg" alt="Soutènements" class="use-img">
+                        <div class="use-content">
+                            <h3>Soutènements & Enrochements</h3>
+                            <p>Maîtrise des pentes et des reliefs. Murs en gabions, enrochements paysagers ou murs maçonnés pour sécuriser et structurer le terrain.</p>
+                        </div>
+                    </article>
+                    <article class="use-card fade-in">
+                        <img src="../assets/images/garden.jpg" alt="Jardins" class="use-img">
+                        <div class="use-content">
+                            <h3>Végétal & Gazon</h3>
+                            <p>Gazon de placage pour un effet immédiat ou synthétique haut de gamme. Plantations structurantes adaptées au climat et à l'exposition.</p>
+                        </div>
+                    </article>
+                    <article class="use-card fade-in">
+                        <img src="../assets/images/fence.svg" alt="Clôtures" class="use-img">
+                        <div class="use-content">
+                            <h3>Clôtures & Occultations</h3>
+                            <p>Préserver votre intimité avec élégance. Panneaux bois, aluminium, claustras découpés au laser ou haies vives.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="background-color: var(--offwhite);">
+            <div class="container">
+                <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="fade-in">
+                        <span class="eco-badge">Démarche Durable</span>
+                        <h2>Une approche respectueuse</h2>
+                        <p>Nous concevons des jardins qui vivent avec leur temps et leur environnement.</p>
+                        
+                        <ul style="margin-top: 2rem;">
+                            <li style="margin-bottom: 1.5rem;">
+                                <strong style="color: var(--blue-deep);">Gestion de l'eau</strong><br>
+                                Systèmes d'arrosage connectés et économes, récupération des eaux pluviales, choix de plantes peu gourmandes en eau.
+                            </li>
+                            <li style="margin-bottom: 1.5rem;">
+                                <strong style="color: var(--blue-deep);">Matériaux pérennes</strong><br>
+                                Privilégier la pierre locale, les bois certifiés FSC/PEFC et les matériaux recyclables.
+                            </li>
+                            <li>
+                                <strong style="color: var(--blue-deep);">Biodiversité</strong><br>
+                                Création de zones favorables à la faune locale, choix d'essences mellifères.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fade-in">
+                        <div style="background: var(--white); padding: 3rem; border: 1px solid var(--grey-perl);">
+                            <h3 style="color: var(--gold); margin-bottom: 1.5rem;">Coordination Globale</h3>
+                            <p>L'aménagement extérieur nécessite l'intervention de plusieurs corps de métier (terrassier, maçon, électricien, paysagiste).</p>
+                            <p style="margin-top: 1rem;"><strong>Éclat de Jardin est votre chef d'orchestre.</strong> Nous coordonnons l'ensemble du chantier pour vous garantir une tranquillité d'esprit totale et une cohérence esthétique parfaite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2>Envie de repenser votre jardin ?</h2>
+                <a href="../contact.html" class="btn btn-primary">Prendre rendez-vous</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="logo-text" style="display: block; margin-bottom: 1.5rem;">ÉCLAT DE JARDIN</a>
+                    <p style="color: rgba(255,255,255,0.7);">L'excellence de l'aménagement extérieur.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="piscines.html">Piscines</a></li>
+                        <li><a href="amenagement-exterieur.html">Aménagement Extérieur</a></li>
+                        <li><a href="containers.html">Containers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Avenue du Prestige</li>
+                        <li>75008 Paris, France</li>
+                        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                        <li><a href="mailto:contact@eclatdejardin.fr">contact@eclatdejardin.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Éclat de Jardin. Tous droits réservés. <a href="../mentions-legales.html">Mentions Légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

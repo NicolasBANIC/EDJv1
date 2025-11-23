@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éclat de Jardin | Créateurs d'espaces extérieurs d'exception</title>
+    <meta name="description" content="Éclat de Jardin : piscines de luxe, aménagements extérieurs et containers sur-mesure. Design architectural pour villas et propriétés de prestige.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Page Specific Styles */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(13, 42, 74, 0.7), rgba(13, 42, 74, 0.5)), url('assets/images/hero-pool.svg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            color: var(--offwhite);
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 1px solid var(--grey-perl);
+            transition: var(--transition-fast);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--gold);
+        }
+
+        .service-icon {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-icon img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .why-us {
+            background-color: var(--offwhite);
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--blue-deep);
+            color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-left: 4px solid var(--gold);
+        }
+
+        .stars {
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            background-color: var(--blue-deep);
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-text">
+                ÉCLAT DE JARDIN
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services/index.html">Services</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="a-propos.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Demander une étude</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay muted loop playsinline class="hero-video" poster="assets/images/hero-pool.svg">
+                <source src="assets/video/8335195-uhd_3840_2160_25fps.webm" type="video/webm">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content fade-in">
+                <h1>Créateurs d’espaces extérieurs d’exception</h1>
+                <p>Éclat de Jardin transforme vos rêves en réalité architecturale. Piscines de luxe, aménagements paysagers et solutions containers sur-mesure pour une élégance intemporelle.</p>
+                <div class="hero-cta">
+                    <a href="contact.html" class="btn btn-primary">Demander une étude sur-mesure</a>
+                    <a href="realisations.html" class="btn btn-secondary" style="color: var(--white); border-color: var(--white);">Découvrir nos réalisations</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="section-header fade-in" style="text-align: center; margin-bottom: 4rem;">
+                    <h2>Nos Pôles d'Excellence</h2>
+                    <p>Une expertise globale pour sublimer votre habitat</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card fade-in">
+                        <div class="service-icon"><img src="assets/icons/pool.svg" alt="Piscines"></div>
+                        <h3>Piscines</h3>
+                        <p>Des bassins d'exception, de la piscine coque premium au bassin maçonné sur-mesure, intégrés parfaitement à votre environnement.</p>
+                        <a href="services/piscines.html" class="btn btn-secondary">En savoir plus</a>
+                    </article>
+                    <article class="service-card fade-in">
+                        <div class="service-icon"><img src="assets/icons/landscape.svg" alt="Aménagement"></div>
+                        <h3>Aménagement Extérieur</h3>
+                        <p>Terrasses, jardins, soutènements et éclairages. Nous sculptons votre extérieur pour en faire un lieu de vie unique.</p>
+                        <a href="services/amenagement-exterieur.html" class="btn btn-secondary">En savoir plus</a>
+                    </article>
+                    <article class="service-card fade-in">
+                        <div class="service-icon"><img src="assets/icons/container.svg" alt="Containers"></div>
+                        <h3>Containers</h3>
+                        <p>Solutions architecturales modulaires : pool house, studio de jardin, bureau ou espace de stockage design.</p>
+                        <a href="services/containers.html" class="btn btn-secondary">En savoir plus</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <div class="container">
+                <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="fade-in">
+                        <h2>Pourquoi Éclat de Jardin ?</h2>
+                        <p>Nous allions savoir-faire artisanal et vision architecturale moderne. Chaque projet est une œuvre unique, conçue pour durer et pour émouvoir.</p>
+                        <ul style="margin-top: 2rem;">
+                            <li style="margin-bottom: 1rem;">✓ <strong>Conception 3D immersive</strong> pour visualiser votre projet.</li>
+                            <li style="margin-bottom: 1rem;">✓ <strong>Matériaux nobles</strong> sélectionnés pour leur durabilité.</li>
+                            <li style="margin-bottom: 1rem;">✓ <strong>Interlocuteur unique</strong> de la conception à la livraison.</li>
+                            <li>✓ <strong>Suivi rigoureux</strong> et respect des délais.</li>
+                        </ul>
+                    </div>
+                    <div class="fade-in">
+                        <img src="assets/images/architecture-detail.svg" alt="Détail architecture" style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="container">
+                <div class="section-header fade-in" style="text-align: center;">
+                    <h2>Un Processus Sur-Mesure</h2>
+                    <p>L'excellence à chaque étape de votre projet</p>
+                </div>
+                <div class="process-steps fade-in">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Découverte</h4>
+                        <p>Écoute de vos besoins et analyse du terrain.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Conception</h4>
+                        <p>Études techniques et modélisation 3D.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Réalisation</h4>
+                        <p>Construction par nos artisans experts.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Finitions</h4>
+                        <p>Détails soignés et remise des clés.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" style="background-color: var(--offwhite);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;" class="fade-in">Ce que disent nos clients</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="stars">★★★★★</div>
+                        <p>"Une transformation incroyable de notre jardin. La piscine est un bijou et l'équipe a été d'un professionnalisme rare."</p>
+                        <p><strong>Sophie & Marc L.</strong> - <em>Aix-en-Provence</em></p>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars">★★★★★</div>
+                        <p>"Le pool house en container est magnifique et s'intègre parfaitement. Merci pour cette vision moderne."</p>
+                        <p><strong>Jean-Pierre D.</strong> - <em>Lyon</em></p>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="stars">★★★★★</div>
+                        <p>"Sérieux, ponctuels et un résultat au-delà de nos espérances. Je recommande Éclat de Jardin les yeux fermés."</p>
+                        <p><strong>Marie C.</strong> - <em>Bordeaux</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container fade-in">
+                <h2>Prêt à sublimer votre extérieur ?</h2>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Discutons de votre projet et créons ensemble un espace unique.</p>
+                <a href="contact.html" class="btn btn-primary">Planifier un rendez-vous</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo-text" style="display: block; margin-bottom: 1.5rem;">ÉCLAT DE JARDIN</a>
+                    <p style="color: rgba(255,255,255,0.7);">L'excellence de l'aménagement extérieur. Piscines, jardins et containers pour une vie plus belle.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/piscines.html">Piscines</a></li>
+                        <li><a href="services/amenagement-exterieur.html">Aménagement Extérieur</a></li>
+                        <li><a href="services/containers.html">Containers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Avenue du Prestige</li>
+                        <li>75008 Paris, France</li>
+                        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                        <li><a href="mailto:contact@eclatdejardin.fr">contact@eclatdejardin.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Éclat de Jardin. Tous droits réservés. <a href="mentions-legales.html">Mentions Légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+=======
+
+>>>>>>> 5285812179e7c31bd39c2d9cb10ec1a4b5d386d3
