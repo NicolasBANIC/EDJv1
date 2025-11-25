@@ -1,4 +1,3 @@
-// @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
@@ -10,7 +9,7 @@ module.exports = defineConfig({
   reporter: 'list',
   use: {
     trace: 'on-first-retry',
-    baseURL: 'http://localhost:8080',
+    baseURL: 'http://localhost:8081',
   },
   projects: [
     {
@@ -19,8 +18,9 @@ module.exports = defineConfig({
     },
   ],
   webServer: {
-    command: 'python -m http.server 8080',
-    url: 'http://localhost:8080',
-    reuseExistingServer: true,
+    command: 'python -m http.server 8081',
+    url: 'http://localhost:8081',
+    reuseExistingServer: !process.env.CI,
+    timeout: 120000,
   },
 });

@@ -13,6 +13,7 @@
             color: var(--white);
             padding: 10rem 0 6rem;
             text-align: center;
+            border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
         }
 
         .uses-grid {
@@ -23,24 +24,149 @@
         }
 
         .use-card {
-            background: var(--white);
-            border: 1px solid var(--grey-perl);
-            transition: var(--transition-fast);
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition-luxury);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .use-card::before {
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            opacity: 0.10;
+            pointer-events: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: var(--transition-luxury);
+            top: -20px;
+            right: -20px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M20 100 Q40 80 60 100 T100 100 T140 100 T180 100' stroke='%23D4AF37' stroke-width='2' fill='none' opacity='0.4'/%3E%3Cpath d='M20 120 Q40 100 60 120 T100 120 T140 120 T180 120' stroke='%23D4AF37' stroke-width='2' fill='none' opacity='0.3'/%3E%3Cpath d='M20 140 Q40 120 60 140 T100 140 T140 140 T180 140' stroke='%23D4AF37' stroke-width='2' fill='none' opacity='0.2'/%3E%3Ccircle cx='50' cy='90' r='3' fill='%23D4AF37' opacity='0.3'/%3E%3Ccircle cx='120' cy='95' r='2' fill='%23D4AF37' opacity='0.25'/%3E%3Ccircle cx='160' cy='110' r='2.5' fill='%23D4AF37' opacity='0.2'/%3E%3C/svg%3E");
+        }
+
+        .use-card:nth-child(2)::before {
+            bottom: -15px;
+            top: auto;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M40 40 L80 40 L80 80 L40 80 Z' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.3'/%3E%3Cpath d='M90 50 L120 50 L120 70 L90 70 Z' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.25'/%3E%3Cpath d='M130 40 L160 40 L160 80 L130 80 Z' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.2'/%3E%3Cline x1='60' y1='90' x2='60' y2='150' stroke='%23D4AF37' stroke-width='1.5' opacity='0.25'/%3E%3Cline x1='100' y1='85' x2='100' y2='140' stroke='%23D4AF37' stroke-width='1.5' opacity='0.2'/%3E%3Cline x1='145' y1='90' x2='145' y2='160' stroke='%23D4AF37' stroke-width='1.5' opacity='0.25'/%3E%3Ccircle cx='60' cy='60' r='4' fill='%23D4AF37' opacity='0.2'/%3E%3C/svg%3E");
+        }
+
+        .use-card:nth-child(3)::before {
+            top: -10px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect x='60' y='30' width='35' height='140' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.3'/%3E%3Crect x='105' y='40' width='35' height='130' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.25'/%3E%3Cline x1='77' y1='30' x2='77' y2='170' stroke='%23D4AF37' stroke-width='1' opacity='0.2'/%3E%3Cline x1='122' y1='40' x2='122' y2='170' stroke='%23D4AF37' stroke-width='1' opacity='0.2'/%3E%3Crect x='70' y='50' width='15' height='20' fill='%23D4AF37' opacity='0.15'/%3E%3Crect x='115' y='60' width='15' height='20' fill='%23D4AF37' opacity='0.12'/%3E%3C/svg%3E");
         }
 
         .use-card:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--gold);
+        }
+
+        .use-card:hover::before {
+            opacity: 0.18;
         }
 
         .use-img {
             height: 250px;
             width: 100%;
             object-fit: cover;
+            transition: var(--transition-luxury);
+        }
+
+        .use-card:hover .use-img {
+            transform: scale(1.05);
         }
 
         .use-content {
             padding: 2rem;
+        }
+
+        .use-content h3 {
+            font-family: var(--font-heading);
+            color: var(--blue-deep);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .application-card {
+            background: #ffffff;
+            padding: 48px 40px 40px 40px;
+            border: 1px solid #eaeaea;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-luxury);
+            text-align: center;
+        }
+
+        .application-card::before {
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            opacity: 0.10;
+            pointer-events: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: var(--transition-luxury);
+            top: -20px;
+            right: -20px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M20 100 Q40 80 60 100 T100 100 T140 100 T180 100' stroke='%23D4AF37' stroke-width='2' fill='none' opacity='0.4'/%3E%3Cpath d='M20 120 Q40 100 60 120 T100 120 T140 120 T180 120' stroke='%23D4AF37' stroke-width='2' fill='none' opacity='0.3'/%3E%3Cpath d='M20 140 Q40 120 60 140 T100 140 T140 140 T180 140' stroke='%23D4AF37' stroke-width='2' fill='none' opacity='0.2'/%3E%3Ccircle cx='50' cy='90' r='3' fill='%23D4AF37' opacity='0.3'/%3E%3Ccircle cx='120' cy='95' r='2' fill='%23D4AF37' opacity='0.25'/%3E%3Ccircle cx='160' cy='110' r='2.5' fill='%23D4AF37' opacity='0.2'/%3E%3C/svg%3E");
+        }
+
+        .application-card:nth-child(even)::before {
+            bottom: -15px;
+            top: auto;
+            left: -15px;
+            right: auto;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M40 40 L80 40 L80 80 L40 80 Z' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.3'/%3E%3Cpath d='M90 50 L120 50 L120 70 L90 70 Z' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.25'/%3E%3Cpath d='M130 40 L160 40 L160 80 L130 80 Z' stroke='%23D4AF37' stroke-width='1.5' fill='none' opacity='0.2'/%3E%3Cline x1='60' y1='90' x2='60' y2='150' stroke='%23D4AF37' stroke-width='1.5' opacity='0.25'/%3E%3Cline x1='100' y1='85' x2='100' y2='140' stroke='%23D4AF37' stroke-width='1.5' opacity='0.2'/%3E%3Cline x1='145' y1='90' x2='145' y2='160' stroke='%23D4AF37' stroke-width='1.5' opacity='0.25'/%3E%3Ccircle cx='60' cy='60' r='4' fill='%23D4AF37' opacity='0.2'/%3E%3C/svg%3E");
+        }
+
+        .application-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+            border-color: var(--gold);
+        }
+
+        .application-card:hover::before {
+            opacity: 0.18;
+        }
+
+        .application-card h4 {
+            font-family: var(--font-heading);
+            color: var(--blue-cobalt);
+            margin-bottom: 1rem;
+            font-size: 1.35rem;
+        }
+
+        .application-card p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .application-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .application-icon img {
+            width: 100%;
+            height: 100%;
+            transition: var(--transition-luxury);
+        }
+
+        .application-card:hover .application-icon img {
+            transform: scale(1.15);
         }
 
         .tech-section {
@@ -57,9 +183,30 @@
         }
 
         .tech-icon {
-            font-size: 2.5rem;
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tech-icon img {
+            width: 100%;
+            height: 100%;
+            transition: var(--transition-luxury);
+        }
+
+        .tech-item:hover .tech-icon img {
+            transform: scale(1.15);
+        }
+
+        .tech-item h3 {
             color: var(--gold);
-            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
         }
 
         .faq-section {
@@ -128,7 +275,7 @@
                     <li><a href="../realisations.html">Réalisations</a></li>
                     <li><a href="../a-propos.html">À Propos</a></li>
                     <li><a href="../contact.html">Contact</a></li>
-                    <li><a href="../contact.html" class="btn btn-primary">Demander une étude</a></li>
+                    <li><a href="../contact.html" class="btn btn-primary nav-cta">Demander une étude</a></li>
                 </ul>
             </nav>
         </div>
@@ -154,25 +301,68 @@
                         <img src="../assets/images/pool-house.jpg" alt="Pool House" class="use-img">
                         <div class="use-content">
                             <h3>Pool House</h3>
-                            <p>L'allié parfait de votre piscine. Espace vestiaire, cuisine d'été ouverte, local technique intégré. Le tout avec un style résolument moderne.</p>
+                            <p>L'allié parfait de votre piscine. Espace vestiaire avec douches et WC, cuisine d'été ouverte, local technique pour filtration et coffret électrique. Isolation thermique pour utilisation toute saison, ventilation intégrée. Le tout avec un style résolument moderne.</p>
                         </div>
                     </article>
 
                     <article class="use-card fade-in">
                         <img src="../assets/images/studio-garden.jpg" alt="Studio de Jardin" class="use-img">
                         <div class="use-content">
-                            <h3>Studio & Bureau</h3>
-                            <p>Télétravaillez au calme ou accueillez vos amis en toute indépendance. Isolation thermique performante pour une utilisation toute l'année.</p>
+                            <h3>Studio, Bureau & Logement</h3>
+                            <p>Container transformé en logement d'appoint habitable (conformité normes RT, VMC, plomberie) ou bureau de télétravail isolé et câblé. Accueillez vos invités en toute indépendance. Isolation thermique et acoustique performante, chauffage électrique ou pompe à chaleur. Utilisation toute l'année dans le confort.</p>
                         </div>
                     </article>
 
                     <article class="use-card fade-in">
                         <img src="../assets/images/storage.jpg" alt="Stockage Design" class="use-img">
                         <div class="use-content">
-                            <h3>Stockage & Technique</h3>
-                            <p>Fini l'abri de jardin en tôle. Optez pour un local vélo sécurisé, un atelier bricolage ou un local poubelle design et intégré.</p>
+                            <h3>Stockage, Local Vélo & Local Poubelles</h3>
+                            <p>Fini l'abri de jardin en tôle. <strong>Stockage :</strong> outils, équipement, archives sécurisés. <strong>Local vélo :</strong> espace fermé avec éclairage LED et prises de recharge pour vélos électriques. <strong>Local poubelles :</strong> enclos ventilé et propre pour conteneurs de tri, accessible mais discret. Design industriel intégré à votre propriété.</p>
                         </div>
                     </article>
+                </div>
+
+                <div class="section-header" style="text-align: center; margin-top: 6rem; margin-bottom: 3rem;">
+                    <h2>Applications Possibles</h2>
+                    <p>Toutes les transformations que nous maîtrisons pour votre projet container.</p>
+                </div>
+
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div class="application-card fade-in">
+                        <div class="application-icon"><img src="../assets/icons/home.svg" alt="Logement"></div>
+                        <h4>Logement</h4>
+                        <p>Container transformé en studio habitable à l'année. Isolation thermique renforcée (laine de roche 120 mm minimum), VMC double flux, plomberie complète (eau chaude, évacuation), installation électrique conforme NF C 15-100. Chauffage par pompe à chaleur ou radiateurs électriques basse consommation. Respect des normes RT2012 ou RE2020 selon projet.</p>
+                    </div>
+
+                    <div class="application-card fade-in">
+                        <div class="application-icon"><img src="../assets/icons/box.svg" alt="Stockage"></div>
+                        <h4>Stockage</h4>
+                        <p>Local sécurisé pour outils de jardin, équipement sportif ou archives professionnelles. Traitement anticorrosion intérieur, plancher renforcé, étagères sur mesure, serrure haute sécurité. Aération naturelle ou forcée pour éviter l'humidité. Accès facilité par porte simple ou double battant.</p>
+                    </div>
+
+                    <div class="application-card fade-in">
+                        <div class="application-icon"><img src="../assets/icons/bike.svg" alt="Local Vélo"></div>
+                        <h4>Local Vélo</h4>
+                        <p>Espace sécurisé avec éclairage LED automatique, prises électriques 220V pour recharge de vélos électriques et trottinettes. Fixations murales pour suspendre les vélos, sol antidérapant. Ventilation pour éviter la condensation. Serrure renforcée et possibilité d'ajouter un système de vidéosurveillance.</p>
+                    </div>
+
+                    <div class="application-card fade-in">
+                        <div class="application-icon"><img src="../assets/icons/trash.svg" alt="Local Poubelles"></div>
+                        <h4>Local Poubelles</h4>
+                        <p>Enclos ventilé et hygiénique pour conteneurs de tri sélectif. Aération haute et basse pour éviter les odeurs, sol en pente avec siphon de sol pour nettoyage au jet. Porte large pour sortir facilement les bacs le jour de collecte. Finition extérieure coordonnée à votre jardin (bardage bois, peinture RAL).</p>
+                    </div>
+
+                    <div class="application-card fade-in">
+                        <div class="application-icon"><img src="../assets/icons/pool-house.svg" alt="Pool House"></div>
+                        <h4>Pool House</h4>
+                        <p>Compagnon idéal de votre piscine. Vestiaire avec douches (eau chaude solaire ou électrique), WC, rangements pour serviettes et jouets de piscine. Cuisine d'été avec plan de travail, évier et frigo. Local technique isolé pour pompe de filtration, électrolyseur et coffret électrique piscine. Baies vitrées coulissantes pour profiter de la vue.</p>
+                    </div>
+
+                    <div class="application-card fade-in">
+                        <div class="application-icon"><img src="../assets/icons/custom.svg" alt="Sur-Mesure"></div>
+                        <h4>Sur-Mesure</h4>
+                        <p>Vous avez un projet unique ? Nous concevons des containers entièrement personnalisés : atelier d'artiste avec verrière zénithale, espace bien-être avec sauna et douche tropicale, showroom ou boutique éphémère, salle de sport privée, home cinéma… Assemblage multi-containers possible pour créer de grands volumes. Accompagnement architectural complet du concept à la réalisation.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -182,19 +372,19 @@
                 <h2 style="text-align: center; margin-bottom: 4rem; color: var(--white);">Excellence Technique</h2>
                 <div class="tech-grid">
                     <div class="tech-item fade-in">
-                        <div class="tech-icon">⚙</div>
+                        <div class="tech-icon"><img src="../assets/icons/gear.svg" alt="Structure"></div>
                         <h3>Structure Acier</h3>
-                        <p style="color: rgba(255,255,255,0.8);">Acier Corten ultra-résistant, traité anticorrosion. Une longévité à toute épreuve face aux intempéries.</p>
+                        <p style="color: rgba(255,255,255,0.8);">Acier Corten ultra-résistant, traité anticorrosion par métallisation ou peinture époxy. Fondations sur plots béton, longrines ou vis de fondation selon sol. Une longévité à toute épreuve face aux intempéries.</p>
                     </div>
                     <div class="tech-item fade-in">
-                        <div class="tech-icon">🌡</div>
-                        <h3>Isolation Premium</h3>
-                        <p style="color: rgba(255,255,255,0.8);">Isolation par l'intérieur (laine de roche, mousse PU) conforme aux normes RT2012/RE2020 pour un confort été comme hiver.</p>
+                        <div class="tech-icon"><img src="../assets/icons/thermometer.svg" alt="Isolation"></div>
+                        <h3>Isolation & Ventilation</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Isolation par l'intérieur : laine de roche (incombustible), mousse polyuréthane projetée ou panneaux sandwich. Conforme RT2012/RE2020. VMC simple ou double flux pour renouvellement d'air constant. Confort été comme hiver.</p>
                     </div>
                     <div class="tech-item fade-in">
-                        <div class="tech-icon">🎨</div>
-                        <h3>Finitions Sur-Mesure</h3>
-                        <p style="color: rgba(255,255,255,0.8);">Bardage bois, crépi, ou aspect industriel brut. Larges baies vitrées aluminium pour la lumière.</p>
+                        <div class="tech-icon"><img src="../assets/icons/paint.svg" alt="Finitions"></div>
+                        <h3>Finitions & Normes Électriques</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Bardage bois, crépi taloché, ou acier brut industriel. Larges baies vitrées aluminium à rupture de pont thermique. Installation électrique conforme NF C 15-100, tableau divisionnaire, prises et éclairage LED basse consommation.</p>
                     </div>
                 </div>
             </div>

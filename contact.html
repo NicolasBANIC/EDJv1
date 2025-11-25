@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .page-header {
-            background-color: var(--blue-deep);
+            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('assets/images/herocontact.png') no-repeat center center/cover;
             color: var(--white);
             padding: 8rem 0 4rem;
             text-align: center;
+            border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
         }
 
         .contact-container {
@@ -114,7 +115,7 @@
                     <li><a href="realisations.html">Réalisations</a></li>
                     <li><a href="a-propos.html">À Propos</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Demander une étude</a></li>
+                    <li><a href="contact.html" class="btn btn-primary nav-cta">Demander une étude</a></li>
                 </ul>
             </nav>
         </div>
@@ -217,8 +218,16 @@
             </div>
         </section>
 
-        <section class="map-container" style="padding: 0; display: block;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84496.86666666667!2d7.7521113!3d48.5734053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c8495e18b2c1%3A0x971a483118e7241f!2sStrasbourg!5e0!3m2!1sfr!2sfr!4v1684420000000!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="contact-map-section">
+            <div class="container">
+                <div class="contact-map-heading">
+                    <h3>Localisation</h3>
+                    <div class="map-heading-underline"></div>
+                </div>
+                <div class="contact-map-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84496.86666666667!2d7.7521113!3d48.5734053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c8495e18b2c1%3A0x971a483118e7241f!2sStrasbourg!5e0!3m2!1sfr!2sfr!4v1684420000000!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
     </main>
 

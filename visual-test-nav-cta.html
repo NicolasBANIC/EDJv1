@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Test - Nav CTA Button</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { padding: 2rem; }
+        .test-section { margin: 2rem 0; padding: 1rem; border: 1px solid #ccc; }
+        h2 { margin-top: 0; }
+        code { background: #f0f0f0; padding: 0.25rem 0.5rem; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Visual Test: Navigation CTA Button</h1>
+    
+    <div class="test-section">
+        <h2>✓ Test 1: Nav CTA Button with .nav-cta class</h2>
+        <p>This button should be vertically centered and display gold background on hover with white text.</p>
+        <a href="#" class="btn btn-primary nav-cta">Demander une étude</a>
+        <p><code>class="btn btn-primary nav-cta"</code></p>
+    </div>
+
+    <div class="test-section">
+        <h2>✓ Test 2: Regular Primary Button (for comparison)</h2>
+        <p>This button does NOT have .nav-cta class (like hero button).</p>
+        <a href="#" class="btn btn-primary">Demander une étude sur-mesure</a>
+        <p><code>class="btn btn-primary"</code> (no nav-cta)</p>
+    </div>
+
+    <div class="test-section">
+        <h2>✓ Test 3: CSS Inspection</h2>
+        <p>Open DevTools (F12) and inspect the first button to verify:</p>
+        <ul>
+            <li><code>display: inline-flex</code></li>
+            <li><code>align-items: center</code></li>
+            <li><code>justify-content: center</code></li>
+            <li><code>line-height: 1</code></li>
+        </ul>
+        <p>Hover over the button to verify white text color on gold background.</p>
+    </div>
+
+    <div class="test-section">
+        <h2>✓ Test 4: Responsive Test</h2>
+        <p>Resize your browser to test responsiveness. The button should maintain its alignment.</p>
+        <p style="font-size: 0.9rem; color: #666;">
+            Desktop: Full width nav with button on the right<br>
+            Mobile: Button remains centered when nav collapses
+        </p>
+    </div>
+
+    <div class="test-section" style="background: #f9f9f9;">
+        <h2>Technical Details</h2>
+        <p><strong>CSS Applied:</strong></p>
+        <pre><code>.nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.nav-cta:hover {
+    color: var(--white);
+}</code></pre>
+        <p><strong>Files Updated:</strong> 6 HTML files + css/style.css</p>
+        <p><strong>Color Scheme:</strong></p>
+        <ul>
+            <li>Background (hover): Gold (#D4AF37)</li>
+            <li>Text (hover): White (#FFFFFF)</li>
+        </ul>
+    </div>
+</body>
+</html>
