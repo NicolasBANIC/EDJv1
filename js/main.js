@@ -1,11 +1,76 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Prefers Reduced Motion: Pause Hero Video if user has motion preference
-    const heroVideo = document.querySelector('.hero-video');
-    if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        heroVideo.removeAttribute('autoplay');
-        heroVideo.pause();
+function initHeroVideo() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+
+  const fallback = document.querySelector('.hero-fallback') || null;
+  let fallbackTimeoutId = null;
+
+  function showFallback() {
+    if (fallback) fallback.classList.add('hero-fallback--visible');
+    video.classList.add('hero-video--hidden');
+  }
+
+  function hideFallback() {
+    if (fallback) fallback.classList.remove('hero-fallback--visible');
+    video.classList.remove('hero-video--hidden');
+  }
+
+  function safePlay() {
+    try {
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.then === 'function') {
+        playPromise
+          .then(function () {
+            hideFallback();
+          })
+          .catch(function () {
+            showFallback();
+          });
+      } else {
+        hideFallback();
+      }
+    } catch (e) {
+      showFallback();
     }
-    
+  }
+
+  function onLoadedData() {
+    if (fallbackTimeoutId) {
+      clearTimeout(fallbackTimeoutId);
+      fallbackTimeoutId = null;
+    }
+    safePlay();
+  }
+
+  function onError() {
+    if (fallbackTimeoutId) {
+      clearTimeout(fallbackTimeoutId);
+      fallbackTimeoutId = null;
+    }
+    showFallback();
+  }
+
+  function onEnded() {
+    video.currentTime = 0;
+    safePlay();
+  }
+
+  if (fallback) {
+    fallbackTimeoutId = window.setTimeout(function () {
+      showFallback();
+    }, 3000);
+  }
+
+  video.addEventListener('loadeddata', onLoadedData);
+  video.addEventListener('error', onError);
+  video.addEventListener('ended', onEnded);
+
+  safePlay();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initHeroVideo();
+
     // Header Scroll Effect
     const header = document.querySelector('.site-header');
     window.addEventListener('scroll', () => {
@@ -134,4 +199,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+});
+
+window.addEventListener('pageshow', function (event) {
+  if (event.persisted) {
+    initHeroVideo();
+  }
 });
