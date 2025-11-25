@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos | Éclat de Jardin</title>
-    <meta name="description" content="L'histoire d'Éclat de Jardin, nos valeurs d'excellence et notre équipe de passionnés.">
+    <title>À Propos – Éclat de Jardin | Notre histoire, valeurs et équipe</title>
+    <meta name="description" content="Découvrez l'histoire d'Éclat de Jardin, nos valeurs d'excellence architecturale et notre équipe de passionnés dédiés à votre projet d'extérieur de prestige.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eclatdejardin.fr/a-propos.html">
+    <meta property="og:title" content="À Propos – Éclat de Jardin | Notre histoire, valeurs et équipe">
+    <meta property="og:description" content="Découvrez l'histoire d'Éclat de Jardin, nos valeurs d'excellence architecturale et notre équipe de passionnés dédiés à votre projet d'extérieur de prestige.">
+    <meta property="og:image" content="https://www.eclatdejardin.fr/assets/images/heroapropos.png">
+    
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Éclat de Jardin",
+      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
+      "url": "https://www.eclatdejardin.fr",
+      "telephone": "+33123456789",
+      "email": "contact@eclatdejardin.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Avenue du Prestige",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
+      "priceRange": "€€€",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
     <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .page-header {
-            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('assets/images/heroapropos.png') no-repeat center center/cover;
-            color: var(--white);
-            padding: 8rem 0 4rem;
-            text-align: center;
-            border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
-        }
-
         .story-section {
             padding: 6rem 0;
         }
@@ -75,6 +98,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
     <header class="site-header">
         <div class="container nav-container">
@@ -86,12 +110,12 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="services/index.html">Services</a></li>
                     <li><a href="realisations.html">Réalisations</a></li>
-                    <li><a href="a-propos.html" class="active">À Propos</a></li>
+                    <li><a href="a-propos.html" class="active" aria-current="page">À Propos</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="contact.html" class="btn btn-primary nav-cta">Demander une étude</a></li>
                 </ul>
@@ -99,8 +123,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
+    <main id="main-content">
+        <section class="page-header page-header--apropos">
             <div class="container fade-in">
                 <h1>Notre Histoire</h1>
                 <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">Une passion pour l'architecture extérieure et le travail bien fait.</p>
@@ -117,23 +141,23 @@
                         <p>Notre force réside dans la maîtrise globale du projet, de la première esquisse 3D à la pose du dernier luminaire.</p>
                     </div>
                     <div class="fade-in">
-                        <img src="assets/images/architect-work.jpg" alt="Architecte au travail" style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="assets/images/architect-work.jpg" alt="Architecte au travail" loading="lazy" decoding="async" style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                 </div>
 
                 <div class="values-grid">
                     <div class="value-card fade-in">
-                        <div class="value-icon"><img src="assets/icons/star.svg" alt="Excellence" style="width: 40px; height: 40px;"></div>
+                        <div class="value-icon"><img src="assets/icons/star.svg" alt="Excellence" loading="lazy" decoding="async" style="width: 40px; height: 40px;"></div>
                         <h3>Excellence</h3>
                         <p>Le souci du détail est notre signature. Nous sélectionnons les meilleurs matériaux et artisans.</p>
                     </div>
                     <div class="value-card fade-in">
-                        <div class="value-icon"><img src="assets/icons/check.svg" alt="Accompagnement" style="width: 40px; height: 40px;"></div>
+                        <div class="value-icon"><img src="assets/icons/check.svg" alt="Accompagnement" loading="lazy" decoding="async" style="width: 40px; height: 40px;"></div>
                         <h3>Accompagnement</h3>
                         <p>Un interlocuteur unique vous guide à chaque étape pour un projet serein et transparent.</p>
                     </div>
                     <div class="value-card fade-in">
-                        <div class="value-icon"><img src="assets/icons/landscape.svg" alt="Créativité" style="width: 40px; height: 40px;"></div>
+                        <div class="value-icon"><img src="assets/icons/landscape.svg" alt="Créativité" loading="lazy" decoding="async" style="width: 40px; height: 40px;"></div>
                         <h3>Créativité</h3>
                         <p>Chaque terrain est unique. Nous imaginons des solutions sur-mesure pour révéler son potentiel.</p>
                     </div>
@@ -148,19 +172,19 @@
                 
                 <div class="team-grid">
                     <div class="team-member fade-in">
-                        <img src="assets/images/team-1.jpg" alt="Directeur" class="member-img">
+                        <img src="assets/images/team-1.jpg" alt="Directeur" class="member-img" loading="lazy" decoding="async">
                         <h4>Alexandre Dubois</h4>
                         <p class="member-role">Fondateur & Architecte</p>
                         <p>"L'extérieur est le nouveau salon."</p>
                     </div>
                     <div class="team-member fade-in">
-                        <img src="assets/images/team-2.jpg" alt="Chef de projet" class="member-img">
+                        <img src="assets/images/team-2.jpg" alt="Chef de projet" class="member-img" loading="lazy" decoding="async">
                         <h4>Sophie Martin</h4>
                         <p class="member-role">Chef de Projet</p>
                         <p>"Rigueur et écoute pour chaque client."</p>
                     </div>
                     <div class="team-member fade-in">
-                        <img src="assets/images/team-3.jpg" alt="Paysagiste" class="member-img">
+                        <img src="assets/images/team-3.jpg" alt="Paysagiste" class="member-img" loading="lazy" decoding="async">
                         <h4>Thomas Leroy</h4>
                         <p class="member-role">Paysagiste</p>
                         <p>"La nature comme matériau de construction."</p>

@@ -3,41 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aménagement Paysager – Éclat de Jardin | Terrasses & Jardins</title>
-    <meta name="description" content="Aménagement paysager haut de gamme : terrasses bois et pierre, soutènements, enrochements, gazon naturel et synthétique, clôtures design. Création de jardins sur-mesure.">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.eclatdejardin.fr/services/amenagement-exterieur.html">
-    <meta property="og:title" content="Aménagement Paysager – Éclat de Jardin | Terrasses & Jardins">
-    <meta property="og:description" content="Aménagement paysager haut de gamme : terrasses bois et pierre, soutènements, enrochements, gazon naturel et synthétique, clôtures design. Création de jardins sur-mesure.">
-    <meta property="og:image" content="https://www.eclatdejardin.fr/assets/images/garden-service.svg">
-    
-    <!-- JSON-LD LocalBusiness Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Éclat de Jardin",
-      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
-      "url": "https://www.eclatdejardin.fr",
-      "telephone": "+33123456789",
-      "email": "contact@eclatdejardin.fr",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Avenue du Prestige",
-        "addressLocality": "Paris",
-        "postalCode": "75008",
-        "addressCountry": "FR"
-      },
-      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
-      "priceRange": "€€€",
-      "openingHours": "Mo-Fr 09:00-18:00"
-    }
-    </script>
+    <title>Aménagement Extérieur | Éclat de Jardin</title>
+    <meta name="description" content="Paysagiste haut de gamme : terrasses, soutènements, enrochements, gazon et création de jardins sur-mesure.">
     <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
     <link rel="stylesheet" href="../css/style.css">
     <style>
+        .page-header {
+            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/heroamenagementext.png') no-repeat center center/cover;
+            color: var(--white);
+            padding: 10rem 0 6rem;
+            text-align: center;
+            border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
+        }
+
         .uses-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -110,7 +88,7 @@
     </header>
 
     <main id="main-content">
-        <section class="page-header page-header--services page-header--amenagement">
+        <section class="page-header">
             <div class="container fade-in">
                 <h1>Aménagement Extérieur</h1>
                 <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">Sculpter le paysage pour créer des lieux de vie. Terrasses, jardins et structures pour une harmonie parfaite.</p>

@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piscines de Luxe | Éclat de Jardin</title>
-    <meta name="description" content="Construction de piscines haut de gamme : coque, béton, container. Filtration, sécurité et intégration paysagère.">
+    <title>Piscines de Luxe – Éclat de Jardin | Coque, Béton, Container</title>
+    <meta name="description" content="Construction de piscines haut de gamme : piscines coques, béton maçonné, containers design. Filtration, sécurité, chauffage et intégration paysagère sur-mesure.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eclatdejardin.fr/services/piscines.html">
+    <meta property="og:title" content="Piscines de Luxe – Éclat de Jardin | Coque, Béton, Container">
+    <meta property="og:description" content="Construction de piscines haut de gamme : piscines coques, béton maçonné, containers design. Filtration, sécurité, chauffage et intégration paysagère sur-mesure.">
+    <meta property="og:image" content="https://www.eclatdejardin.fr/assets/images/pool-service.jpg">
+    
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Éclat de Jardin",
+      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
+      "url": "https://www.eclatdejardin.fr",
+      "telephone": "+33123456789",
+      "email": "contact@eclatdejardin.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Avenue du Prestige",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
+      "priceRange": "€€€",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
     <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        .page-header {
-            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/pool-service.jpg') no-repeat center center/cover;
-            color: var(--white);
-            padding: 10rem 0 6rem;
-            text-align: center;
-            border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
-        }
-
         .detail-section {
             padding: 4rem 0;
         }
@@ -86,6 +109,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
     <header class="site-header">
         <div class="container nav-container">
@@ -97,10 +121,10 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="index.html" class="active">Services</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Services</a></li>
                     <li><a href="../realisations.html">Réalisations</a></li>
                     <li><a href="../a-propos.html">À Propos</a></li>
                     <li><a href="../contact.html">Contact</a></li>
@@ -110,8 +134,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
+    <main id="main-content">
+        <section class="page-header page-header--services page-header--piscines">
             <div class="container fade-in">
                 <h1>Piscines d'Exception</h1>
                 <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">L'art de l'eau maîtrisé. Des bassins conçus pour durer et pour sublimer votre extérieur.</p>
@@ -192,7 +216,7 @@
                         </div>
                     </div>
                     <div class="fade-in">
-                        <img src="../assets/images/pool-detail.jpg" alt="Détail piscine" style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="../assets/images/pool-detail.jpg" alt="Détail piscine" loading="lazy" decoding="async" style="border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                 </div>
             </div>

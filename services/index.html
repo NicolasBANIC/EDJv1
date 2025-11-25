@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Services | Éclat de Jardin</title>
-    <meta name="description" content="Découvrez nos pôles d'expertise : piscines, aménagement paysager et containers architecturaux.">
+    <title>Services – Éclat de Jardin | Piscines, Aménagement & Containers</title>
+    <meta name="description" content="Nos trois pôles d'expertise : piscines d'exception (coques, maçonnées, containers), aménagement paysager haut de gamme et containers architecturaux modulaires.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eclatdejardin.fr/services/">
+    <meta property="og:title" content="Services – Éclat de Jardin | Piscines, Aménagement & Containers">
+    <meta property="og:description" content="Nos trois pôles d'expertise : piscines d'exception (coques, maçonnées, containers), aménagement paysager haut de gamme et containers architecturaux modulaires.">
+    <meta property="og:image" content="https://www.eclatdejardin.fr/assets/images/nosserviceshero.png">
+    
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Éclat de Jardin",
+      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
+      "url": "https://www.eclatdejardin.fr",
+      "telephone": "+33123456789",
+      "email": "contact@eclatdejardin.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Avenue du Prestige",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
+      "priceRange": "€€€",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
     <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
     <link rel="stylesheet" href="../css/style.css">
     <style>
@@ -49,6 +80,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
     <header class="site-header">
         <div class="container nav-container">
@@ -60,10 +92,10 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="index.html" class="active">Services</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Services</a></li>
                     <li><a href="../realisations.html">Réalisations</a></li>
                     <li><a href="../a-propos.html">À Propos</a></li>
                     <li><a href="../contact.html">Contact</a></li>
@@ -73,7 +105,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="page-header">
             <div class="container fade-in">
                 <h1>Nos Services</h1>
@@ -86,7 +118,7 @@
                 
                 <div class="service-block fade-in">
                     <div class="service-img-wrapper">
-                        <img src="../assets/images/pool-service.jpg" alt="Piscines de luxe" class="service-img">
+                        <img src="../assets/images/pool-service.jpg" alt="Piscines de luxe" class="service-img" loading="lazy" decoding="async">
                     </div>
                     <div class="service-content">
                         <h2>Piscines d'Exception</h2>
@@ -97,7 +129,7 @@
 
                 <div class="service-block fade-in">
                     <div class="service-img-wrapper">
-                        <img src="../assets/images/garden-service.svg" alt="Aménagement paysager" class="service-img">
+                        <img src="../assets/images/servicesAmExt.png" alt="Aménagement extérieur haut de gamme – Éclat de Jardin" class="service-img" loading="lazy" decoding="async">
                     </div>
                     <div class="service-content">
                         <h2>Aménagement Extérieur</h2>
@@ -108,7 +140,7 @@
 
                 <div class="service-block fade-in">
                     <div class="service-img-wrapper">
-                        <img src="../assets/images/container-service.jpg" alt="Containers aménagés" class="service-img">
+                        <img src="../assets/images/servicesContainers.png" alt="Container architectural transformé en pool house – Éclat de Jardin" class="service-img" loading="lazy" decoding="async">
                     </div>
                     <div class="service-content">
                         <h2>Containers Architecturaux</h2>

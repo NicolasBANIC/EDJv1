@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Containers Architecturaux | Éclat de Jardin</title>
-    <meta name="description" content="Solutions modulaires haut de gamme : pool house, studio de jardin, bureau et stockage en container maritime transformé.">
+    <title>Containers Architecturaux – Éclat de Jardin | Pool House & Studios</title>
+    <meta name="description" content="Solutions modulaires design et haut de gamme : pool house, studio de jardin, bureau, stockage, local vélo. Containers maritimes transformés avec finitions luxe.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eclatdejardin.fr/services/containers.html">
+    <meta property="og:title" content="Containers Architecturaux – Éclat de Jardin | Pool House & Studios">
+    <meta property="og:description" content="Solutions modulaires design et haut de gamme : pool house, studio de jardin, bureau, stockage, local vélo. Containers maritimes transformés avec finitions luxe.">
+    <meta property="og:image" content="https://www.eclatdejardin.fr/assets/images/container-service.jpg">
+    
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Éclat de Jardin",
+      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
+      "url": "https://www.eclatdejardin.fr",
+      "telephone": "+33123456789",
+      "email": "contact@eclatdejardin.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Avenue du Prestige",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
+      "priceRange": "€€€",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
     <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        .page-header {
-            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/container-service.jpg') no-repeat center center/cover;
-            color: var(--white);
-            padding: 10rem 0 6rem;
-            text-align: center;
-            border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
-        }
-
         .uses-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -257,6 +280,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
     <header class="site-header">
         <div class="container nav-container">
@@ -268,10 +292,10 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="index.html" class="active">Services</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Services</a></li>
                     <li><a href="../realisations.html">Réalisations</a></li>
                     <li><a href="../a-propos.html">À Propos</a></li>
                     <li><a href="../contact.html">Contact</a></li>
@@ -281,8 +305,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
+    <main id="main-content">
+        <section class="page-header page-header--services page-header--containers">
             <div class="container fade-in">
                 <h1>Containers Architecturaux</h1>
                 <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">L'upcycling de luxe. Une structure robuste, un design industriel et une infinité de possibilités.</p>
@@ -298,7 +322,7 @@
 
                 <div class="uses-grid">
                     <article class="use-card fade-in">
-                        <img src="../assets/images/pool-house.jpg" alt="Pool House" class="use-img">
+                        <img src="../assets/images/pool-house.jpg" alt="Pool House" class="use-img" loading="lazy" decoding="async">
                         <div class="use-content">
                             <h3>Pool House</h3>
                             <p>L'allié parfait de votre piscine. Espace vestiaire avec douches et WC, cuisine d'été ouverte, local technique pour filtration et coffret électrique. Isolation thermique pour utilisation toute saison, ventilation intégrée. Le tout avec un style résolument moderne.</p>
@@ -306,7 +330,7 @@
                     </article>
 
                     <article class="use-card fade-in">
-                        <img src="../assets/images/studio-garden.jpg" alt="Studio de Jardin" class="use-img">
+                        <img src="../assets/images/studio-garden.jpg" alt="Studio de Jardin" class="use-img" loading="lazy" decoding="async">
                         <div class="use-content">
                             <h3>Studio, Bureau & Logement</h3>
                             <p>Container transformé en logement d'appoint habitable (conformité normes RT, VMC, plomberie) ou bureau de télétravail isolé et câblé. Accueillez vos invités en toute indépendance. Isolation thermique et acoustique performante, chauffage électrique ou pompe à chaleur. Utilisation toute l'année dans le confort.</p>
@@ -314,7 +338,7 @@
                     </article>
 
                     <article class="use-card fade-in">
-                        <img src="../assets/images/storage.jpg" alt="Stockage Design" class="use-img">
+                        <img src="../assets/images/storage.jpg" alt="Stockage Design" class="use-img" loading="lazy" decoding="async">
                         <div class="use-content">
                             <h3>Stockage, Local Vélo & Local Poubelles</h3>
                             <p>Fini l'abri de jardin en tôle. <strong>Stockage :</strong> outils, équipement, archives sécurisés. <strong>Local vélo :</strong> espace fermé avec éclairage LED et prises de recharge pour vélos électriques. <strong>Local poubelles :</strong> enclos ventilé et propre pour conteneurs de tri, accessible mais discret. Design industriel intégré à votre propriété.</p>
@@ -329,37 +353,37 @@
 
                 <div style="max-width: 900px; margin: 0 auto;">
                     <div class="application-card fade-in">
-                        <div class="application-icon"><img src="../assets/icons/home.svg" alt="Logement"></div>
+                        <div class="application-icon"><img src="../assets/icons/home.svg" alt="Logement" loading="lazy" decoding="async"></div>
                         <h4>Logement</h4>
                         <p>Container transformé en studio habitable à l'année. Isolation thermique renforcée (laine de roche 120 mm minimum), VMC double flux, plomberie complète (eau chaude, évacuation), installation électrique conforme NF C 15-100. Chauffage par pompe à chaleur ou radiateurs électriques basse consommation. Respect des normes RT2012 ou RE2020 selon projet.</p>
                     </div>
 
                     <div class="application-card fade-in">
-                        <div class="application-icon"><img src="../assets/icons/box.svg" alt="Stockage"></div>
+                        <div class="application-icon"><img src="../assets/icons/box.svg" alt="Stockage" loading="lazy" decoding="async"></div>
                         <h4>Stockage</h4>
                         <p>Local sécurisé pour outils de jardin, équipement sportif ou archives professionnelles. Traitement anticorrosion intérieur, plancher renforcé, étagères sur mesure, serrure haute sécurité. Aération naturelle ou forcée pour éviter l'humidité. Accès facilité par porte simple ou double battant.</p>
                     </div>
 
                     <div class="application-card fade-in">
-                        <div class="application-icon"><img src="../assets/icons/bike.svg" alt="Local Vélo"></div>
+                        <div class="application-icon"><img src="../assets/icons/bike.svg" alt="Local Vélo" loading="lazy" decoding="async"></div>
                         <h4>Local Vélo</h4>
                         <p>Espace sécurisé avec éclairage LED automatique, prises électriques 220V pour recharge de vélos électriques et trottinettes. Fixations murales pour suspendre les vélos, sol antidérapant. Ventilation pour éviter la condensation. Serrure renforcée et possibilité d'ajouter un système de vidéosurveillance.</p>
                     </div>
 
                     <div class="application-card fade-in">
-                        <div class="application-icon"><img src="../assets/icons/trash.svg" alt="Local Poubelles"></div>
+                        <div class="application-icon"><img src="../assets/icons/trash.svg" alt="Local Poubelles" loading="lazy" decoding="async"></div>
                         <h4>Local Poubelles</h4>
                         <p>Enclos ventilé et hygiénique pour conteneurs de tri sélectif. Aération haute et basse pour éviter les odeurs, sol en pente avec siphon de sol pour nettoyage au jet. Porte large pour sortir facilement les bacs le jour de collecte. Finition extérieure coordonnée à votre jardin (bardage bois, peinture RAL).</p>
                     </div>
 
                     <div class="application-card fade-in">
-                        <div class="application-icon"><img src="../assets/icons/pool-house.svg" alt="Pool House"></div>
+                        <div class="application-icon"><img src="../assets/icons/pool-house.svg" alt="Pool House" loading="lazy" decoding="async"></div>
                         <h4>Pool House</h4>
                         <p>Compagnon idéal de votre piscine. Vestiaire avec douches (eau chaude solaire ou électrique), WC, rangements pour serviettes et jouets de piscine. Cuisine d'été avec plan de travail, évier et frigo. Local technique isolé pour pompe de filtration, électrolyseur et coffret électrique piscine. Baies vitrées coulissantes pour profiter de la vue.</p>
                     </div>
 
                     <div class="application-card fade-in">
-                        <div class="application-icon"><img src="../assets/icons/custom.svg" alt="Sur-Mesure"></div>
+                        <div class="application-icon"><img src="../assets/icons/custom.svg" alt="Sur-Mesure" loading="lazy" decoding="async"></div>
                         <h4>Sur-Mesure</h4>
                         <p>Vous avez un projet unique ? Nous concevons des containers entièrement personnalisés : atelier d'artiste avec verrière zénithale, espace bien-être avec sauna et douche tropicale, showroom ou boutique éphémère, salle de sport privée, home cinéma… Assemblage multi-containers possible pour créer de grands volumes. Accompagnement architectural complet du concept à la réalisation.</p>
                     </div>
@@ -372,17 +396,17 @@
                 <h2 style="text-align: center; margin-bottom: 4rem; color: var(--white);">Excellence Technique</h2>
                 <div class="tech-grid">
                     <div class="tech-item fade-in">
-                        <div class="tech-icon"><img src="../assets/icons/gear.svg" alt="Structure"></div>
+                        <div class="tech-icon"><img src="../assets/icons/gear.svg" alt="Structure" loading="lazy" decoding="async"></div>
                         <h3>Structure Acier</h3>
                         <p style="color: rgba(255,255,255,0.8);">Acier Corten ultra-résistant, traité anticorrosion par métallisation ou peinture époxy. Fondations sur plots béton, longrines ou vis de fondation selon sol. Une longévité à toute épreuve face aux intempéries.</p>
                     </div>
                     <div class="tech-item fade-in">
-                        <div class="tech-icon"><img src="../assets/icons/thermometer.svg" alt="Isolation"></div>
+                        <div class="tech-icon"><img src="../assets/icons/thermometer.svg" alt="Isolation" loading="lazy" decoding="async"></div>
                         <h3>Isolation & Ventilation</h3>
                         <p style="color: rgba(255,255,255,0.8);">Isolation par l'intérieur : laine de roche (incombustible), mousse polyuréthane projetée ou panneaux sandwich. Conforme RT2012/RE2020. VMC simple ou double flux pour renouvellement d'air constant. Confort été comme hiver.</p>
                     </div>
                     <div class="tech-item fade-in">
-                        <div class="tech-icon"><img src="../assets/icons/paint.svg" alt="Finitions"></div>
+                        <div class="tech-icon"><img src="../assets/icons/paint.svg" alt="Finitions" loading="lazy" decoding="async"></div>
                         <h3>Finitions & Normes Électriques</h3>
                         <p style="color: rgba(255,255,255,0.8);">Bardage bois, crépi taloché, ou acier brut industriel. Larges baies vitrées aluminium à rupture de pont thermique. Installation électrique conforme NF C 15-100, tableau divisionnaire, prises et éclairage LED basse consommation.</p>
                     </div>

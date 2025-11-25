@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentions Légales | Éclat de Jardin</title>
+    <title>Mentions Légales – Éclat de Jardin</title>
+    <meta name="description" content="Mentions légales d'Éclat de Jardin : informations sur l'éditeur du site, hébergement, propriété intellectuelle et données personnelles.">
+    
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Éclat de Jardin",
+      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
+      "url": "https://www.eclatdejardin.fr",
+      "telephone": "+33123456789",
+      "email": "contact@eclatdejardin.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Avenue du Prestige",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
+      "priceRange": "€€€",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
     <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .page-header {
-            background-color: var(--blue-deep);
-            color: var(--white);
-            padding: 6rem 0 3rem;
-            text-align: center;
-        }
         .legal-content {
             padding: 4rem 0;
             max-width: 800px;
@@ -29,6 +48,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
     <header class="site-header">
         <div class="container nav-container">
@@ -40,7 +60,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="services/index.html">Services</a></li>
@@ -53,8 +73,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
+    <main id="main-content">
+        <section class="page-header page-header--mentions">
             <div class="container">
                 <h1>Mentions Légales</h1>
             </div>

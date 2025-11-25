@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Réalisations | Éclat de Jardin</title>
-    <meta name="description" content="Portfolio de nos plus belles réalisations : piscines, jardins et containers d'exception.">
+    <title>Réalisations – Éclat de Jardin | Piscines & Jardins d'exception</title>
+    <meta name="description" content="Découvrez notre portfolio de réalisations de prestige : piscines à débordement, jardins contemporains et containers architecturaux. Projets livrés en France.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eclatdejardin.fr/realisations.html">
+    <meta property="og:title" content="Réalisations – Éclat de Jardin | Piscines & Jardins d'exception">
+    <meta property="og:description" content="Découvrez notre portfolio de réalisations de prestige : piscines à débordement, jardins contemporains et containers architecturaux. Projets livrés en France.">
+    <meta property="og:image" content="https://www.eclatdejardin.fr/assets/images/herorealisations.png">
+    
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Éclat de Jardin",
+      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
+      "url": "https://www.eclatdejardin.fr",
+      "telephone": "+33123456789",
+      "email": "contact@eclatdejardin.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Avenue du Prestige",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
+      "priceRange": "€€€",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
     <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .page-header {
-            background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('assets/images/herorealisations.png') no-repeat center center/cover;
-            color: var(--white);
-            padding: 8rem 0 4rem;
-            text-align: center;
-            border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
-        }
-
         .filters {
             display: flex;
             justify-content: center;
@@ -194,6 +217,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
     <header class="site-header">
         <div class="container nav-container">
@@ -205,11 +229,11 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="services/index.html">Services</a></li>
-                    <li><a href="realisations.html" class="active">Réalisations</a></li>
+                    <li><a href="realisations.html" class="active" aria-current="page">Réalisations</a></li>
                     <li><a href="a-propos.html">À Propos</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="contact.html" class="btn btn-primary nav-cta">Demander une étude</a></li>
@@ -218,8 +242,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
+    <main id="main-content">
+        <section class="page-header page-header--realisations">
             <div class="container fade-in">
                 <h1>Nos Réalisations</h1>
                 <p style="color: var(--offwhite); max-width: 600px; margin: 0 auto;">Découvrez notre savoir-faire à travers une sélection de projets uniques.</p>
@@ -239,7 +263,7 @@
                 <div class="portfolio-grid">
                     <!-- Project 1 -->
                     <div class="project-card fade-in" data-category="piscine" onclick="openModal('p1')">
-                        <img src="assets/images/hero-pool.svg" alt="Villa Azur" class="project-img">
+                        <img src="assets/images/hero-pool.svg" alt="Villa Azur" class="project-img" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <span class="project-category">Piscine</span>
                             <h3>Villa Azur</h3>
@@ -249,7 +273,7 @@
 
                     <!-- Project 2 -->
                     <div class="project-card fade-in" data-category="amenagement" onclick="openModal('p2')">
-                        <img src="assets/images/garden-service.svg" alt="Jardin Zen" class="project-img">
+                        <img src="assets/images/garden-service.svg" alt="Jardin Zen" class="project-img" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <span class="project-category">Aménagement</span>
                             <h3>Jardin Zen</h3>
@@ -259,7 +283,7 @@
 
                     <!-- Project 3 -->
                     <div class="project-card fade-in" data-category="container" onclick="openModal('p3')">
-                        <img src="assets/images/pool-house.jpg" alt="Pool House Black" class="project-img">
+                        <img src="assets/images/pool-house.jpg" alt="Pool House Black" class="project-img" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <span class="project-category">Container</span>
                             <h3>Pool House Black</h3>
@@ -269,7 +293,7 @@
 
                     <!-- Project 4 -->
                     <div class="project-card fade-in" data-category="piscine" onclick="openModal('p4')">
-                        <img src="assets/images/pool-detail.jpg" alt="Couloir de Nage" class="project-img">
+                        <img src="assets/images/pool-detail.jpg" alt="Couloir de Nage" class="project-img" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <span class="project-category">Piscine</span>
                             <h3>Couloir de Nage</h3>
@@ -279,7 +303,7 @@
 
                     <!-- Project 5 -->
                     <div class="project-card fade-in" data-category="amenagement" onclick="openModal('p5')">
-                        <img src="assets/images/terrace.jpg" alt="Terrasse Ipé" class="project-img">
+                        <img src="assets/images/terrace.jpg" alt="Terrasse Ipé" class="project-img" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <span class="project-category">Aménagement</span>
                             <h3>Terrasse Ipé</h3>
@@ -289,7 +313,7 @@
 
                     <!-- Project 6 -->
                     <div class="project-card fade-in" data-category="container" onclick="openModal('p6')">
-                        <img src="assets/images/studio-garden.jpg" alt="Studio Garden" class="project-img">
+                        <img src="assets/images/studio-garden.jpg" alt="Studio Garden" class="project-img" loading="lazy" decoding="async">
                         <div class="project-overlay">
                             <span class="project-category">Container</span>
                             <h3>Studio Garden</h3>
@@ -314,7 +338,7 @@
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal()">&times;</span>
             <div class="modal-body">
-                <img src="" alt="" id="modal-img" class="modal-img">
+                <img src="" alt="" id="modal-img" class="modal-img" loading="lazy" decoding="async">
                 <div class="modal-info">
                     <h3 id="modal-title">Titre du projet</h3>
                     <span id="modal-location" class="modal-location">Ville</span>

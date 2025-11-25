@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Éclat de Jardin | Créateurs d'espaces extérieurs d'exception</title>
     <meta name="description" content="Éclat de Jardin : piscines de luxe, aménagements extérieurs et containers sur-mesure. Design architectural pour villas et propriétés de prestige.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eclatdejardin.fr/">
+    <meta property="og:title" content="Éclat de Jardin | Créateurs d'espaces extérieurs d'exception">
+    <meta property="og:description" content="Éclat de Jardin : piscines de luxe, aménagements extérieurs et containers sur-mesure. Design architectural pour villas et propriétés de prestige.">
+    <meta property="og:image" content="https://www.eclatdejardin.fr/assets/images/EclatDeJardinAccueil.png">
+    
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Éclat de Jardin",
+      "description": "Créateurs d'espaces extérieurs d'exception : piscines de luxe, aménagements paysagers et containers architecturaux",
+      "url": "https://www.eclatdejardin.fr",
+      "telephone": "+33123456789",
+      "email": "contact@eclatdejardin.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Avenue du Prestige",
+        "addressLocality": "Paris",
+        "postalCode": "75008",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Île-de-France", "PACA", "Nouvelle-Aquitaine"],
+      "priceRange": "€€€",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
     <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -205,6 +236,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
 
     <header class="site-header">
         <div class="container nav-container">
@@ -216,9 +248,9 @@
                 <span></span>
                 <span></span>
             </button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
                     <li><a href="services/index.html">Services</a></li>
                     <li><a href="realisations.html">Réalisations</a></li>
                     <li><a href="a-propos.html">À Propos</a></li>
@@ -229,9 +261,9 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero">
-            <video autoplay muted loop playsinline class="hero-video" poster="assets/images/hero-pool.svg">
+            <video autoplay muted loop playsinline preload="metadata" class="hero-video" poster="assets/images/hero-pool.svg">
                 <source src="assets/video/8335195-uhd_3840_2160_25fps.webm" type="video/webm">
             </video>
             <div class="hero-overlay"></div>
@@ -253,19 +285,19 @@
                 </div>
                 <div class="services-grid">
                     <article class="service-card fade-in">
-                        <div class="service-icon"><img src="assets/icons/pool.svg" alt="Piscines"></div>
+                        <div class="service-icon"><img src="assets/icons/pool.svg" alt="Piscines" loading="lazy" decoding="async"></div>
                         <h3>Piscines</h3>
                         <p>Des bassins d'exception : piscines coques, maçonnées, toutes dimensions, et même containers. De la piscine coque premium au bassin sur-mesure, intégrés parfaitement à votre environnement.</p>
                         <a href="services/piscines.html" class="btn btn-secondary">En savoir plus</a>
                     </article>
                     <article class="service-card fade-in">
-                        <div class="service-icon"><img src="assets/icons/landscape.svg" alt="Aménagement"></div>
+                        <div class="service-icon"><img src="assets/icons/landscape.svg" alt="Aménagement" loading="lazy" decoding="async"></div>
                         <h3>Aménagement Extérieur</h3>
                         <p>Terrasses, escaliers, soutènements, enrochements, gazon, clôtures… Nous sculptons votre extérieur pour en faire un lieu de vie unique, structuré et durable.</p>
                         <a href="services/amenagement-exterieur.html" class="btn btn-secondary">En savoir plus</a>
                     </article>
                     <article class="service-card fade-in">
-                        <div class="service-icon"><img src="assets/icons/container.svg" alt="Containers"></div>
+                        <div class="service-icon"><img src="assets/icons/container.svg" alt="Containers" loading="lazy" decoding="async"></div>
                         <h3>Containers</h3>
                         <p>Solutions architecturales modulaires : pool house, studio ou logement, stockage, locaux vélos, locaux poubelles, projets sur-mesure. Du design industriel chic aux finitions haut de gamme.</p>
                         <a href="services/containers.html" class="btn btn-secondary">En savoir plus</a>
@@ -279,16 +311,18 @@
                 <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                     <div class="fade-in">
                         <h2>Pourquoi Éclat de Jardin ?</h2>
-                        <p>Nous allions savoir-faire artisanal et vision architecturale moderne. Chaque projet est une œuvre unique, conçue pour durer et pour émouvoir.</p>
+                        <p>Parce que votre extérieur mérite plus qu’un aménagement : il mérite une signature. Chez Éclat de Jardin, chaque projet est traité comme une pièce d’exception, alliant exigence architecturale, maîtrise technique et esthétique contemporaine.</p>
+                        <p>Nous imaginons des espaces extérieurs raffinés, où chaque ligne, chaque matière, chaque perspective est pensée pour créer un lieu unique — rare — véritablement sur mesure. Nos réalisations s’inspirent des codes du design haut de gamme : proportions équilibrées, matières nobles, harmonie des volumes et élégance intemporelle.</p>
                         <ul style="margin-top: 2rem;">
-                            <li style="margin-bottom: 1rem;">✓ <strong>Conception 3D immersive</strong> pour visualiser votre projet.</li>
-                            <li style="margin-bottom: 1rem;">✓ <strong>Matériaux nobles</strong> sélectionnés pour leur durabilité.</li>
-                            <li style="margin-bottom: 1rem;">✓ <strong>Interlocuteur unique</strong> de la conception à la livraison.</li>
-                            <li>✓ <strong>Suivi rigoureux</strong> et respect des délais.</li>
+                            <li style="margin-bottom: 1rem;">✓ <strong>Conception sur-mesure & visualisations 3D photoréalistes</strong>, pour valider une vision d’ensemble parfaitement maîtrisée.</li>
+                            <li style="margin-bottom: 1rem;">✓ <strong>Sélection rigoureuse de matériaux premium</strong>, choisis pour leur durabilité, leur présence et leur caractère.</li>
+                            <li style="margin-bottom: 1rem;">✓ <strong>Accompagnement exclusif</strong>, avec un interlocuteur unique garant de la cohérence architecturale de votre projet.</li>
+                            <li>✓ <strong>Finitions irréprochables</strong>, respect strict des délais, suivi précis et exigence à chaque étape.</li>
                         </ul>
+                        <p>Avec Éclat de Jardin, votre jardin devient plus qu’un espace extérieur : un lieu d’exception, pensé comme une œuvre architecturale à part entière.</p>
                     </div>
                     <div class="fade-in">
-                        <img src="assets/images/EclatDeJardinAccueil.png" alt="Eclat de Jardin — Aménagement extérieur haut de gamme" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="assets/images/EDJimageAcc.png" alt="Eclat de Jardin — Aménagement extérieur haut de gamme" loading="lazy" decoding="async" style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                 </div>
             </div>
