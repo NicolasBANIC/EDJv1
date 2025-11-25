@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Prefers Reduced Motion: Pause Hero Video if user has motion preference
-    const heroVideo = document.querySelector('.hero-video');
-    if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        heroVideo.removeAttribute('autoplay');
-        heroVideo.pause();
+    const v = document.querySelector('.hero-video');
+    if (v) {
+        const p = v.play();
+        if (p) p.catch(() => { v.muted = true; v.play().catch(() => {}); });
     }
     
     // Header Scroll Effect
