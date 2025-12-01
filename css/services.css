@@ -1,0 +1,36 @@
+/* Page Specific Styles for Services Overview (services/index.html) */
+
+.page-header {
+    background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/nosserviceshero.png') no-repeat center center/cover;
+}
+
+.service-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.service-block:nth-child(even) {
+    direction: rtl;
+}
+
+.service-block:nth-child(even) .service-content {
+    direction: ltr;
+}
+
+.service-img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .service-block, .service-block:nth-child(even) {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+}

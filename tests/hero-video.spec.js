@@ -12,7 +12,13 @@ test('Hero section should have background video and overlay', async ({ page }) =
   await expect(video).toHaveAttribute('playsinline', '');
   
   const source = video.locator('source');
-  await expect(source).toHaveAttribute('src', 'assets/videos/3573964-uhd_3840_2160_30fps.webm');
+  await expect(source).toHaveAttribute('src', 'assets/video/8335195-uhd_3840_2160_25fps.webm');
+
+  // Check fallback
+  const fallback = page.locator('.hero-fallback');
+  await expect(fallback).toHaveAttribute('src', 'assets/images/hero-pool.jpg');
+  // It should be hidden initially (opacity 0) but present in DOM
+  await expect(fallback).toHaveCSS('opacity', '0');
 
   // Check overlay
   const overlay = page.locator('.hero-overlay');

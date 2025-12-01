@@ -2,6 +2,12 @@ function initHeroVideo() {
   const video = document.querySelector('.hero-video');
   if (!video) return;
 
+  // Prevent multiple initializations
+  if (video.dataset.initialized === 'true') {
+    return;
+  }
+  video.dataset.initialized = 'true';
+
   const fallback = document.querySelector('.hero-fallback') || null;
   let fallbackTimeoutId = null;
 
@@ -203,6 +209,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('pageshow', function (event) {
   if (event.persisted) {
-    initHeroVideo();
+    const video = document.querySelector('.hero-video');
+    if (video && video.paused) {
+      video.play().catch(function() {
+        // Silent catch or show fallback if needed
+        const fallback = document.querySelector('.hero-fallback');
+        if (fallback) fallback.classList.add('hero-fallback--visible');
+      });
+    }
   }
 });

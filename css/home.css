@@ -1,0 +1,203 @@
+/* Page Specific Styles for Home (index.html) */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(13, 42, 74, 0.7), rgba(13, 42, 74, 0.5));
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    border-bottom: 1.5px solid rgba(212, 175, 55, 0.8);
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    color: var(--offwhite);
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid var(--grey-perl);
+    transition: var(--transition-fast);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    border-color: var(--gold);
+}
+
+.service-icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.service-icon img {
+    width: 64px;
+    height: 64px;
+}
+
+.why-us {
+    background-color: var(--offwhite);
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+/* Connecting line between medallions */
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--gold) 20%, var(--gold) 80%, transparent 100%);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .process-steps::before {
+        display: none;
+    }
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.step h4 {
+    margin-bottom: 0.75rem;
+    color: var(--blue-deep);
+}
+
+.step p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Premium luxury medallion style */
+.step-number {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-pill);
+    border: 2px solid var(--gold);
+    background: radial-gradient(circle at 30% 30%, #ffffff 0%, #faf8f4 40%, #f6f0e4 70%, #f0e7d6 100%);
+    color: var(--blue-deep);
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 8px 20px rgba(13, 42, 74, 0.12), 0 3px 8px rgba(212, 175, 55, 0.08);
+    transition: var(--transition-luxury);
+    position: relative;
+}
+
+/* Subtle inner glow effect */
+.step-number::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.1);
+}
+
+.step:hover .step-number {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 42, 74, 0.15), 0 5px 15px rgba(212, 175, 55, 0.2);
+    border-color: var(--blue-deep);
+    color: var(--gold);
+    background: var(--blue-deep);
+}
+
+.step:hover .step-number::after {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 4rem;
+    color: var(--gold);
+    opacity: 0.2;
+    font-family: serif;
+}
+
+.stars {
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.services {
+    margin-top: 0;
+}

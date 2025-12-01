@@ -1,0 +1,21 @@
+/* Page Specific Styles for Legal (mentions-legales.html) */
+
+.page-header {
+    background-color: var(--blue-deep);
+}
+
+.legal-content {
+    padding: 4rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: var(--blue-cobalt);
+}
+
+.legal-content p {
+    margin-bottom: 1rem;
+}

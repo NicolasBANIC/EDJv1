@@ -1,0 +1,96 @@
+/* Page Specific Styles for Containers (services/containers.html) */
+
+.page-header {
+    background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/servicesContainers.png') no-repeat center center/cover;
+}
+
+.uses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.use-card {
+    background: var(--white);
+    border: 1px solid var(--grey-perl);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: var(--transition-fast);
+}
+
+.use-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    border-color: var(--gold);
+}
+
+.use-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.use-content {
+    padding: 2rem;
+}
+
+.application-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    background: var(--offwhite);
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.application-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.application-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--grey-perl);
+}
+
+.accordion-header {
+    padding: 1.5rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+.accordion-item.active .accordion-header::after {
+    content: '-';
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+}

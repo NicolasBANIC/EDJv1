@@ -1,0 +1,41 @@
+/* Page Specific Styles for Piscines (services/piscines.html) */
+
+.page-header {
+    background: linear-gradient(rgba(13, 42, 74, 0.8), rgba(13, 42, 74, 0.6)), url('../assets/images/hero-pool.jpg') no-repeat center center/cover;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.detail-card {
+    background: var(--white);
+    border: 1px solid var(--grey-perl);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: var(--transition-fast);
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    border-color: var(--gold);
+}
+
+.detail-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.detail-content {
+    padding: 2rem;
+}
+
+.detail-content h3 {
+    color: var(--blue-deep);
+    margin-bottom: 1rem;
+}
